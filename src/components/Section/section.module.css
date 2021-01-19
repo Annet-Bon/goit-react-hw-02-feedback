@@ -1,8 +1,14 @@
-.statistics {
+.section {
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Dosis;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+.title {
+    margin-bottom: 30px;
 }

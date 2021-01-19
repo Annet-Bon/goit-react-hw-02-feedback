@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FeedbackOptions from './components/FeedbackOptions/index';
 import Statistics from './components/Statistics/index';
 import Notification from './components/Notification/index';
+import Section from './components/Section/index';
 // json
 
 
@@ -41,7 +42,10 @@ export default class App extends Component {
     render() {
         return (
             <>
+            <Section title="Please leave feedback">
                 <FeedbackOptions options={Object.keys(this.state)} onLeaveFeedback={this.onClickBtn} />
+            </Section>
+            <Section title="Statistics">
             {this.countTotalFeedback() > 0 ? (
                 <Statistics
                     good={this.state.good}
@@ -53,6 +57,7 @@ export default class App extends Component {
             ) : (
                 <Notification message="No feedback given" />
             )}
+            </Section>
             </>
         );
     }

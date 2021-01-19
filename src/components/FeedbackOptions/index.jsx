@@ -4,7 +4,6 @@ import styles from './feedbackOptions.module.css';
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
         <section className={styles.feedbackSection}>
-            <h1>Please leave feedback</h1>
             <div className={styles.buttons}>
                 {options.map(option => (
                     <button
