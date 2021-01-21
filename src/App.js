@@ -20,7 +20,8 @@ export default class App extends Component {
 		neutral: PropTypes.number,
 		bad: PropTypes.number,
 		total: PropTypes.number,
-		positivePercentage: PropTypes.number,
+        positivePercentage: PropTypes.number,
+        title: PropTypes.string,
 		options: PropTypes.string,
 		onLeaveFeedback: PropTypes.func,
 	};

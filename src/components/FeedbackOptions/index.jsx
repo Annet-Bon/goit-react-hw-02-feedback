@@ -1,5 +1,4 @@
 import styles from './feedbackOptions.module.css';
-// import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
@@ -19,18 +18,3 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
         </section>
     );
 }
-
-
-// FeedbackOptions.propTypes = {
-//   avatar: PropTypes.string,
-//   name: PropTypes.string,
-//   tag: PropTypes.string,
-//   location: PropTypes.string,
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       followers: PropTypes.number,
-//       views: PropTypes.number,
-//       likes: PropTypes.number,
-//     }),
-//   ),
-// };

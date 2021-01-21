@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import styles from './section.module.css';
 
 export default function Section({ title, children }) {
